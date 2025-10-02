@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+
 // 4. Registry for producers
+@Component
 public class DownloadRegistry {
     private final Map<String, DownloadProducer> producers = new HashMap<>();
 
